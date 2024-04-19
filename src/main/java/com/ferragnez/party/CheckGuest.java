@@ -16,7 +16,7 @@ public class CheckGuest {
 		
 		String[] invitati = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"  };
 		
-		System.out.println(Arrays.toString(invitati));
+		//System.out.println(Arrays.toString(invitati));
 		
 		// metodo Scanner permette di prendere un input dalla tastiera
 		Scanner input = new Scanner(System.in);
@@ -29,25 +29,33 @@ public class CheckGuest {
 		
 		// se il nome inserito è tra i partecipanti il guest è true
 		
+		boolean trovato = false;
+		
 		
 		for (int i = 0; i < invitati.length; i++) {
 			
-			String lista = invitati[i];
+			String currentName = invitati[i];
 			
 			//System.out.println(invitati[i]);
-			if (lista == nomeGuest) {
+			if (currentName == nomeGuest) {
 				
-				System.out.println("Benvenuto! Puoi accedere");
+				trovato = true;
+				
 				
 			}
 			
-			else {
-				
-				System.out.println("Spiacente non sei tra i partecipanti! on puoi entrare");
-				
-			} 
+			}
+		
+		if (trovato != false) {
 			
+			System.out.println("Benvenuto! Puoi accedere");
 		}
+		
+		else {
+			
+			System.out.println("Spiacente non sei tra i partecipanti! Non puoi entrare");
+			
+		} 
 		
 		/*
 		switch (invitati) {
