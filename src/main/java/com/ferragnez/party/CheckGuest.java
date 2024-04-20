@@ -37,16 +37,17 @@ public class CheckGuest {
 			String currentName = invitati[i];
 			
 			//System.out.println(invitati[i]);
-			if (currentName == nomeGuest) {
+			if (currentName.equals(nomeGuest)) {
 				
 				trovato = true;
+				break;
 				
 				
 			}
 			
 			}
 		
-		if (trovato != false) {
+		if (trovato) {
 			
 			System.out.println("Benvenuto! Puoi accedere");
 		}
@@ -57,14 +58,7 @@ public class CheckGuest {
 			
 		} 
 		
-		/*
-		switch (invitati) {
-		case 1:
-			System.out.println("Benvenuto! Puoi accedere");
-			break
-		default:
-			System.out.println("Spiacente non sei tra i partecipanti! Non puoi entrare");
-		} */
+	
 		
 }
 }
