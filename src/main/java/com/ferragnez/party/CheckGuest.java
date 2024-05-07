@@ -1,6 +1,5 @@
 package com.ferragnez.party;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class CheckGuest {
