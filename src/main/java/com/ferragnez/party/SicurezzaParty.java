@@ -10,7 +10,10 @@ public class SicurezzaParty {
 
 	public static void main(String[] args) {
 		
-		Party myFerragnezParty = new Party({"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"  });
+		//Party myFerragnezParty = new Party({"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"  });
+	
+		String[] invitati = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"  };
+		Party myFerragnezParty = new Party(invitati);
 		
 		// metodo Scanner permette di prendere un input dalla tastiera
 		Scanner input = new Scanner(System.in);
@@ -21,7 +24,7 @@ public class SicurezzaParty {
 		// attribuisce alla variabile nome l'input inserito dall'utente
 		String nomeGuest = input.nextLine();
 		
-		ferragnez.accettaOspiti(nomeGuest);
+		myFerragnezParty.accettaOspiti(nomeGuest);
 		
 
 	
