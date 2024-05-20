@@ -63,10 +63,5 @@ public class Party {
 //		Fornire un metodo “accettaOspite” che prenda come parametro un nome e verifichi se
 //		è all’interno dell’array di invitati.
 
-//	BONUS:
-//		Nella classe Party bisogna dare l’opportunità a Fedez di escludere Luis, quindi 
-//		predisporre una funzione che possa sovrascrivere il nome di Luis con un invitato 
-//		qualunque (uno nuovo) se e solo se c’è un valore booleano isLuisAntipatico = true 
-//		(dovete trovare il modo di predisporlo nel posto giusto e valorizzarlo nel modo giusto).
 
 }
