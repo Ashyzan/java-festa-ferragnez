@@ -4,46 +4,52 @@ public class Party {
 
 	// attributi classe
 	private String nomeInvitato;
+	
+	private String [] listaInvitati;
 
-	// costruttore
-	public static Party() {
+	
+	
+	// costruttore 1
+	public Party( String [] invitati) {
 
-		//this.nomeInvitato = nomeInvitato;
-
-		String[] listaInvitati = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi",
-				"Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic" };
+		listaInvitati = invitati ;
 	}
+	
 
+	
 	public void accettaOspiti(String nome) {
 		
 		
-
+	// se il nome inserito è tra i partecipanti il guest è true
+		
 		boolean trovato = false;
-
-		for (int i = 0; i < fez.lenght; i++) {
+		
+		
+		for (int i = 0; i < listaInvitati.length; i++) {
 			
-			String currentName = fez[i];
-
-			// System.out.println(invitati[i]);
-			if (currentName.equals(listaInvitati)) {
-
+			String currentName = listaInvitati[i];
+			
+			//System.out.println(invitati[i]);
+			if (currentName.equals(nome)) {
+				
 				trovato = true;
 				break;
-
+				
+				
 			}
-
-		}
-
+			
+			}
+		
 		if (trovato) {
-
+			
 			System.out.println("Benvenuto! Puoi accedere");
 		}
-
+		
 		else {
-
+			
 			System.out.println("Spiacente non sei tra i partecipanti! Non puoi entrare");
-
-		}
+			
+		} 
 
 	}
 

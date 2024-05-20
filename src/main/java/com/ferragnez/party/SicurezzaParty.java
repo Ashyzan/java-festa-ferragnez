@@ -10,7 +10,7 @@ public class SicurezzaParty {
 	
 	public static void main(String[] args) {
 		
-		Party ferragnez = new Party();
+		Party ferragnez = new Party({"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"  });
 		
 		// metodo Scanner permette di prendere un input dalla tastiera
 				Scanner input = new Scanner(System.in);
